@@ -1,3 +1,47 @@
-body{
-    background-color: aqua;
+/* Importando uma fonte moderna similar à da imagem */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-color: #f4f7f9; /* Cinza muito claro do fundo da imagem */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #004a94; /* Azul escuro institucional (SESI/SENAI) */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#texto {
+    color: #4a4a4a; /* Cinza escuro para leitura confortável */
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+#botao {
+    background-color: #6d42c3; /* Roxo vibrante do botão 'Matricule-se já' */
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px; /* Botão arredondado como no banner */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(109, 66, 195, 0.3);
+}
+
+#botao:hover {
+    background-color: #5835a0; /* Roxo um pouco mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+#botao:active {
+    transform: translateY(0);
 }
