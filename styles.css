@@ -45,3 +45,34 @@ h1 {
 #botao:active {
     transform: translateY(0);
 }
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra leve para profundidade */
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0; /* Cinza claro das bordas do site */
+    border-radius: 25px; /* Seguindo o padrão arredondado do 'Search' */
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito de foco inspirado no azul da marca */
+input[type="text"]:focus {
+    border-color: #004a94; 
+    box-shadow: 0 0 8px rgba(0, 74, 148, 0.2);
+}
+
+/* Estilização do Placeholder */
+input[type="text"]::placeholder {
+    color: #a0a0a0;
+}
